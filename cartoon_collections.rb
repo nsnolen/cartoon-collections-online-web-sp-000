@@ -1,15 +1,17 @@
 def roll_call_dwarves(array)
-  i = 0
-  collection = []
-  while i < array.length
-    collection << yield(array[i])
-    i += 1
-  end
-    collection
-  end
-
-dwarves = ["Doc", "Dopey", "Bashful", "Grumpy"]
-roll_call_dwarves([dwarves]){|dwarf| "#{dwarf}"}
+#   i = 0
+#   collection = []
+#   while i < array.length
+#     collection << yield(array[i])
+#     i += 1
+#   end
+#     collection.each_with_index
+#   end
+# 
+# dwarves = ["Doc", "Dopey", "Bashful", "Grumpy"]
+# roll_call_dwarves([dwarves]){|dwarf| "#{dwarf}"}
+array.collect{|dwarf| "#{dwarf}"}
+end
 
 
 def summon_captain_planet# code an argument here
