@@ -17,7 +17,7 @@ def find_the_cheese(types)
   types.collect{|cheese| cheese.include?(cheese_types)}
 
   if cheese
-    "#{cheese}"
+    "#{cheese.join}"
   else
 end
 end
