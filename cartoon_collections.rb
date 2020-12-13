@@ -14,7 +14,9 @@ end
 
 def find_the_cheese(types)
 
-  types.include?{|cheese| cheese == cheese_types}
+  types.collect{|cheese| cheese.include?(cheese_types)}
   cheese_types = ["cheddar", "gouda", "camembert"]
+  if cheese
+    "#{cheese}"
 
 end
