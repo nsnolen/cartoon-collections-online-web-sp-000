@@ -1,11 +1,11 @@
 def roll_call_dwarves(dwarves)
   i = 0
-  snow_white = []
+  collection = []
   while i < dwarves.length
-    snow_white << yield(dwarves[i])
+    collection << yield(dwarves[i])
     i += 1
   end
-    snow_white
+    collection
   end
 
 array = ["Doc", "Dopey", "Bashful", "Grumpy"]
