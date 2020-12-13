@@ -14,10 +14,6 @@ end
 
 def find_the_cheese(types)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  types.collect{|cheese| cheese.include?(cheese_types)}
-
-  if cheese
-    cheese.join
-  else
+  types.find?(ifnone = nil) {|cheese| cheese == cheese_types}
 end
 end
