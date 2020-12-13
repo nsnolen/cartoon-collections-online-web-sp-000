@@ -17,5 +17,3 @@ def find_the_cheese(types)
   types.find(ifnone = nil) {|cheese| cheese.include?(cheese_types)}
   print result
 end
-
-
