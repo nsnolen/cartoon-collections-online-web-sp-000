@@ -15,5 +15,4 @@ end
 def find_the_cheese(types)
   cheese_types = ["cheddar", "gouda", "camembert"]
   types.find(ifnone = nil) {|cheese| cheese == cheese_types}
-  "#{cheese}"
 end
