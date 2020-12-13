@@ -10,7 +10,8 @@ def roll_call_dwarves(array)
 #
 # dwarves = ["Doc", "Dopey", "Bashful", "Grumpy"]
 # roll_call_dwarves([dwarves]){|dwarf| "#{dwarf}"}
-array.collect{|dwarf| "#{dwarf}.each_with_index"}
+array.collect{|dwarf| "#{dwarf}"}
+roll_call_dwarves.each_with_index
 end
 
 
