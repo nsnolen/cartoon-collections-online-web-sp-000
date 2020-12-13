@@ -5,8 +5,8 @@ def roll_call_dwarves(dwarves)
     snow_white << yield(dwarves[i])
     i += 1
   end
-    snow_white.each_with_index
-end
+    snow_white
+  end
 
 array = ["Doc", "Dopey", "Bashful", "Grumpy"]
 roll_call_dwarves([array]){|dwarf| "#{dwarf}"}
