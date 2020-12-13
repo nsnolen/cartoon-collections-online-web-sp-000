@@ -18,5 +18,4 @@ def find_the_cheese(types)
   print result
 end
 
-def find_the_cheese(types)
-  types.
+
